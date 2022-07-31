@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/FontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>crickApp</title>
+</head>
+  <body>
+    <section class="homepage">
+        <div class="container">
+           <div class="home_content">
+              <div class="row">
+                  <div class="col-md-6">
+                    <div id="homeSlider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <!-- <img src="../images/sunny.png" alt="Los Angeles" class="d-block" style="width:100%"> -->
+                            <div class="carousel-content">
+                              <h3>The Live Scoreboard !!! </h3>
+                              <p>One stop destination</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <!-- <img src="../images/cloudy.png" alt="Chicago" class="d-block" style="width:100%"> -->
+                            <div class="carousel-content">
+                              <h3>Cricket Live Score !!!</h3>
+                              <p>And much more...</p>
+                            </div> 
+                          </div>
+                          <div class="carousel-item">
+                            <!-- <img src="../images/rainy.png" alt="New York" class="d-block" style="width:100%"> -->
+                            <div class="carousel-content">
+                              <h3>More Games & Fun</h3>
+                              <p>Coming Soon!</p>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div> 
+              <div class="row">
+                <div class="col-md-8">
+                    <div class="d-flex category_wrapper">
+                      <div class="category_container">
+                        <span class="mch_categories">Search by categories...</span>
+                        <div class="match_types" id="match_types"></div> 
+                      </div>
+                      <div class="input-group search_container">
+                        <p class="tag">Search your team here</p>  
+                        <input type="text" id="search_input" class="form-control" placeholder="e.g. India">
+                        <button type="submit" id="search_btn" class="btn btn-primary" onclick="searchMatches(this)">Submit</button>
+                     </div>
+                   </div>
+                 </div> 
+              </div>            
+           </div> 
+        </div>
+    </section>
+    <div class="search_matches">
+         <div id="match-title-p"></div>
+         <section class="match_search_details" id="match_search_details"> </section>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Scoreboard</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                   <div class="fullscore" id="fullscore"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    <div class="match_info" id="match_info">
+        <ul id="match_info_list"></ul>
+   </div>
+ <section>
+    <div class="container">
+       <div class="row">
+           <p class="match-title" id="match-title"></p>
+           <div class="values" id="values">
+          </div>
+       </div>    
+    </div>
+ </section>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+body,html{
+         font-family: 'Montserrat', sans-serif !important; 
+         /*font-family: 'Comfortaa' !important; */
+        }
+    .homepage{
+        background: url(../images/banner.jpg);
+        height: 80vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    button#search_btn:after{
+      content: '\f002';
+      font-family: 'FontAwesome';
+      font-size: 1rem;
+      color: #fff;
+    }
+    .search_container input{
+      border-top-left-radius: 10px !important;
+      border-bottom-left-radius: 10px !important;
+    }
+    button#search_btn{
+      font-size: 0rem;
+      background-color: #fbbe13;
+      background-color:#782537;
+      border: 1px solid #ccc;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    } 
+    .homepage h3{
+       font-weight: bold;
+       font-size: 2.5rem;
+    }
+    .homepage #homeSlider .carousel-content p{
+       font-size: 2.15rem;
+    }
+    .search_container .tag{
+      font-size: .9rem;
+      flex-basis: 100%;
+      margin-bottom: .3rem;
+     } 
+    .match_types p:hover{
+      color: #333;
+      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,243,244,0.3169642857142857) 100%);
+      transform: translate(10px, 0px);
+    }
+    #match_search_details .wrapper_inner p:nth-child(2){
+      font-size: .8rem;
+    }
+    .match_types p.active{
+      color: #333;
+      background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,243,244,0.3169642857142857) 100%);
+    }
+    .match_types p{
+      color: #fff;
+      font-size: 1.5rem;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      background: transparent;
+      width: fit-content;
+      padding: 0px 10px;
+      cursor: pointer;
+      transition: transform .5s ease-out;
+      margin-bottom: 0;
+    }
+    .match_types :not(p:first-child){
+      margin-top: 10px;
+    }
+   .match_search_details{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-top: 35px;
+   } 
+    .score_wrapper{
+     flex-basis: 33.33%;
+    }
+   .score_wrapper .wrapper_inner {
+     border: 1px solid #fbbe13;
+     margin: 15px;
+     padding: 20px;
+     border-radius: 10px;
+     background: #fbbe13;
+     color: #782537;
+     font-weight: 500;
+     box-shadow: 0px 0px 10px #ccc;
+   }
+   .score_wrapper .wrapper_inner button{
+    background: #782537;
+    outline: none;
+    border-color: #782537;
+    color: #fff;
+    border: 1px solid #782537;
+    padding: 2px 15px;
+    border-radius: 5px;
+   }
+   span.mch_categories{
+    padding: 10px 3px 5px;
+    display: inline-block;
+    font-size: .9rem;
+   }
+   img.d-block{
+    max-width: 100%;
+    width: 50% !important;
+    margin: auto;
+   } 
+   #crikCategory .carousel-inner .carousel-caption{
+       color: #333;
+   }
+   .category_wrapper{
+    align-items: flex-end;
+   }
+   .category_container,.search_container{
+       flex-basis: 50%; 
+   }
+   section.parent{
+       display: flex;
+   }
+   section.parent .titles,
+   section.parent .details
+   {
+       flex-basis: 50%;
+   }
+    .teams span,
+    .runs span{
+        display: block;
+    }
+    ul#match_info_list li{
+        cursor: pointer;
+    }
+    .score_wrapper_modal{
+      display: flex;
+    }
+    .score_wrapper_modal .wrapper-inner{
+      flex-basis: 50%;  
+    }
+    .search_matches .modal-content{
+      background: #fbbe13;
+      color: #782537;
+    }
+    .search_matches .modal-content .modal-body{
+      padding: 0rem 1rem 1rem;
+    }
+    .search_matches .modal-content .modal-header{
+      border-bottom: none;
+    }
+    .search_matches .modal-content .modal-body p.match_result{
+      background-color: #782537;
+      color: #ffff;
+      font-size: 1.5rem;
+      font-weight: 500;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .Team.Details p{
+      font-weight: 600;
+    }
+    .Team.Details p>span{
+      font-size: .8rem;
+      font-weight: normal;
+    }
+    .score_wrapper_modal .wrapper-inner p{
+       margin-bottom: .3rem;  
+    }
+    .score_wrapper_modal .wrapper-inner p.team-title{
+       border-bottom: 2px solid #782537;
+       display: inline-block;  
+       text-transform: uppercase;
+    }
