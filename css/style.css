@@ -76,7 +76,19 @@ body,html{
       flex-wrap: wrap;
       justify-content: flex-start;
       padding-top: 35px;
+   }
+   .match_search_details .no-data{
+      width: 100%;
+      text-align: center; 
    } 
+   .match_search_details .no-data p{
+       font-weight: 500;
+       color: #782537;
+    }
+   .match_search_details .no-data img{
+     width: 10%;
+     text-align: center; 
+    }
     .score_wrapper{
      flex-basis: 33.33%;
     }

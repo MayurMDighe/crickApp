@@ -92,7 +92,7 @@
                          }else{
                               console.log('im in else');  
                               document.getElementById('match_search_details').innerHTML = `<div class="no-data">
-                               <p>No data Found, please search again..!</p><div class="no-data-img"><img src=""/></div></div>`;             
+                               <p>Sorry no data found, please search again..!</p><div class="no-data-img"><img src="images/sad-face.png"/></div></div>`;             
                             }
                          
                      })
@@ -161,7 +161,6 @@
                     matchType.map((cval,index)=>{
                           if(obj.id==cval.matchType){
                             let matchDetails = cval.seriesMatches;
-                            // console.log('matchDetails',matchDetails); 
                              matchDetails.map((cval,index)=>{
                              if(index!=1){
                                 let seriesName = cval.seriesAdWrapper;
