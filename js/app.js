@@ -41,8 +41,9 @@
           },function(err){
                 console.log('value in reject:',err); 
           })
-        function searchMatches(value){
+        function searchMatches(obj){
             var inpVal = document.getElementById("search_input").value ;
+            inpVal = inpVal.toLowerCase();
             if(inpVal.length>2){
             var newStr = inpVal.split('');
             var f_Char = newStr[0].toUpperCase();
@@ -58,7 +59,7 @@
             var htmlTitle = "";
             var htmlMatchInfo = "";
             result = inpVal.trim();
-            console.log('this result',result);
+           // console.log('this result',result);
             fetch('crick.json')
             .then((response)=>{
                 return response.json();
@@ -83,13 +84,10 @@
                                     <button id="${cval.matchInfo.matchId}" onclick="getFullScore(this)" data-bs-toggle="modal" data-bs-target="#myModal" onclick="getFullScore(this)">Score</button></div></div>`;
                                })
                              }
-                            
                          }
-                         console.log(htmlMatchInfo);
                          if(htmlMatchInfo.length>0){
                             document.getElementById('match_search_details').innerHTML = htmlMatchInfo;
                          }else{
-                              console.log('im in else');  
                               document.getElementById('match_search_details').innerHTML = `<div class="no-data">
                                <p>Sorry no data found, please search again..!</p><div class="no-data-img"><img src="images/sad-face.png"/></div></div>`;             
                             }
