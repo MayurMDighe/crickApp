@@ -91,7 +91,8 @@
                             document.getElementById('match_search_details').innerHTML = htmlMatchInfo;
                          }else{
                               console.log('im in else');  
-                              document.getElementById('match_search_details').innerHTML = `<p>No data Found, please search again..!</p>`;             
+                              document.getElementById('match_search_details').innerHTML = `<div class="no-data">
+                               <p>No data Found, please search again..!</p><div class="no-data-img"><img src=""/></div></div>`;             
                             }
                          
                      })
@@ -142,25 +143,14 @@
              })
          } 
          function getMatchId(obj){
-           var thisElementList = document.getElementById(obj.id);
-           var thisElement = document.getElementById('match_types');
-           var listNode = thisElement.querySelectorAll('.leagues');    
-            console.log(listNode);
-           for(x in listNode){
-             console.log(listNode[x]);
-             if(listNode[x] == thisElementList){
-               thisElementList.classList.add('active');
-              }else{
-               try{
-                if(listNode[x].classList.contains('active')){
-                listNode[x].classList.remove('active');
-                  }
-                }
-                 catch(err){
-                 console.log(err);
-               }
-             }
-           }
+          obj.classList.add('active-cat');
+          console.log('node this',obj);
+          var classNodes = document.getElementsByClassName('active-cat');
+           for(var i = 0;i<classNodes.length ;i++){
+             if(obj!=classNodes[i]){
+               classNodes[i].className = classNodes[i].className.replace("active-cat"," ");  
+              }  
+            }
             var seriesValues ='';    
             document.getElementById('values').innerHTML = "";
                 document.getElementById('match-title').innerHTML = ""; 

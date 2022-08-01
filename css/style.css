@@ -52,7 +52,7 @@ body,html{
     #match_search_details .wrapper_inner p:nth-child(2){
       font-size: .8rem;
     }
-    .match_types p.active{
+    .match_types p.active-cat{
       color: #333;
       background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,243,244,0.3169642857142857) 100%);
     }
