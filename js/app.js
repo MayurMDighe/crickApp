@@ -43,6 +43,7 @@
           })
         function searchMatches(value){
             var inpVal = document.getElementById("search_input").value ;
+            if(inpVal.length>2){
             var newStr = inpVal.split('');
             var f_Char = newStr[0].toUpperCase();
             newStr[0]
@@ -54,9 +55,7 @@
                } 
             }
             inpVal =  newStrArr.join('');
-
-            if(inpVal.length>1){
-                var htmlTitle = "";
+            var htmlTitle = "";
             var htmlMatchInfo = "";
             result = inpVal.trim();
             console.log('this result',result);
@@ -100,9 +99,8 @@
                 
               })
             }else{
-                alert('Please enter something');
+                alert('Please enter at least 3 characters');
             }
-            
          }
          function getFullScore(matchId){
              var htmlScore=""; 
