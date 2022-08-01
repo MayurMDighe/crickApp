@@ -188,6 +188,9 @@ body,html{
        text-transform: uppercase;
     }
     @media screen and (max-width: 767px) {
+      .homepage{
+        height: 50vh;
+      }
       .score_wrapper{
         flex-basis: 49%;
       }
