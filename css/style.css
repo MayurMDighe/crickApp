@@ -187,3 +187,28 @@ body,html{
        display: inline-block;  
        text-transform: uppercase;
     }
+    @media screen and (max-width: 767px) {
+      .score_wrapper{
+        flex-basis: 49%;
+      }
+      .homepage h3{
+        font-size: 1.8rem;
+        margin-bottom: 0;
+      }
+      .homepage #homeSlider .carousel-content p{
+        font-size: 1.2rem;
+      }
+      .match_search_details{
+        justify-content: space-between;
+        padding: 10px
+      }
+      .match_types :not(p:first-child){
+        margin-top: 10px;
+      }
+      .match_types p{
+        font-size: 1.1rem;
+      }
+      .score_wrapper .wrapper_inner{
+        margin: 5px 0 5px;
+      }
+    }
