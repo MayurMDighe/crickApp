@@ -42,6 +42,12 @@
                 console.log('value in reject:',err); 
           })
         function searchMatches(obj){
+            var leaguesActive = document.getElementsByClassName("leagues");
+            for(i=0;i<leaguesActive.length;i++){
+                if(leaguesActive[i].className.includes("active-cat")){
+                    leaguesActive[i].classList.remove("active-cat"); 
+                }
+            }
             var inpVal = document.getElementById("search_input").value ;
             inpVal = inpVal.toLowerCase();
             if(inpVal.length>2){
@@ -139,6 +145,7 @@
              })
          } 
          function getMatchId(obj){
+          document.getElementById("search_input").value = "";   
           obj.classList.add('active-cat');
           console.log('node this',obj);
           var classNodes = document.getElementsByClassName('active-cat');
