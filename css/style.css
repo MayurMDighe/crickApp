@@ -172,6 +172,9 @@ body,html{
     .Team.Details p{
       font-weight: 600;
     }
+    .Team.Details p:first-child{
+       margin-bottom: 0; 
+    }
     .Team.Details p>span{
       font-size: .8rem;
       font-weight: normal;
